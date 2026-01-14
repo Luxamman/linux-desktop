@@ -4,8 +4,12 @@ A collection of linux-desktop.net resources.
 
 ## Debain scripts
 
-After installing Debian 13 as a stable base. Goal: Fast, repeatable and up-to-date app installations for the most important functions, as well as fixing Debian and GNOME weaknesses (on an app basis). Or to put it another way: Quickly create a computer environment for the average user. With web browsing, email, office applications, and multimedia.
+After installing Debian 13 as a stable base. 
 
+Goal: Fast, repeatable and up-to-date app installations for the most important functions, as well as fixing Debian and GNOME weaknesses (on an app basis). Or to put it another way: Quickly create a computer environment for the average user. With web browsing, email, office applications, and multimedia.
+
+- Backup your data!
+- Download Debian 13 live, test it, install it
 - install Flatpak / Flathub for new apps (script debian-flatpak-setup.sh)
 - reboot
 - install common apps for daily use and remove older versions (debian-apps-setup.sh)
