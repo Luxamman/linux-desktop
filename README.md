@@ -1,26 +1,79 @@
 # linux-desktop
 
-A collection of linux-desktop.net resources.
+A collection of scripts and notes used on  
+https://linux-desktop.net
 
-## Debain scripts
+The goal of this repository is to help create **simple, stable, and low-maintenance Linux desktop systems** for everyday users.
 
-After installing Debian 13 as a stable base. 
+This is **not** a distribution, framework, or enterprise solution.  
+It is a pragmatic, Flatpak-first approach for private desktop computers.
 
-Goal: Fast, repeatable and up-to-date app installations for the most important functions, as well as fixing Debian and GNOME weaknesses (on an app basis). Or to put it another way: Quickly create a computer environment for the average user. With web browsing, email, office applications, and multimedia.
+---
 
-- Backup your data!
-- Download Debian 13 live, test it, install it
-- install Flatpak / Flathub for new apps (script debian-flatpak-setup.sh)
-- reboot
-- install common apps for daily use and remove older versions (debian-apps-setup.sh)
+## Debian desktop scripts
 
-## Installed applications
+The following scripts are designed to be used **after installing Debian 13** as a stable base system (GNOME desktop).
 
-Installed via APT
+### Goal
 
-- Wine (for running Windows applications)
+- Fast and repeatable setup
+- Up-to-date desktop applications via Flatpak
+- Minimal changes to the base system
+- Reduced maintenance effort
+- A familiar desktop for average users
 
-## Installed via Flatpak (Flathub)
+In short:  
+**Quickly create a usable desktop environment for web browsing, email, documents, and multimedia.**
+
+---
+
+## Recommended workflow
+
+1. **Backup your data**
+2. Download **Debian 13 Live**
+3. Test the system and install Debian
+4. Run the Flatpak setup script
+5. Reboot
+6. Run the application setup script
+7. Apply desktop extras and settings
+
+---
+
+## Scripts overview
+
+### 1. `install-flatpak.sh`
+
+Installs Flatpak support and enables Flathub.
+
+This script:
+
+- Installs Flatpak
+- Installs the GNOME Software Flatpak plugin
+- Adds the Flathub repository (if not already present)
+
+This enables installing and updating desktop applications independently from the base system.
+
+---
+
+### 2. `debian-apps-setup.sh`
+
+Removes selected preinstalled applications and installs commonly used desktop software.
+
+#### Removed applications (APT, if present)
+
+- Evince (PDF viewer)
+- Thunderbird (APT version)
+- Evolution
+- Simple Scan (APT version)
+- Totem (GNOME Videos), if installed
+
+These are replaced with Flatpak-based alternatives to avoid duplicate applications and outdated versions.
+
+#### Installed via APT
+
+- **Wine** (for running Windows applications, optional)
+
+#### Installed via Flatpak (Flathub)
 
 - Extension Manager (GNOME extensions)
 - Showtime (video player)
@@ -38,11 +91,48 @@ Installed via APT
 - Déjà Dup (backup tool)
 - Tuner (audio settings utility)
 
+---
+
+### 3. `debian-extras-and-settings.sh`
+
+Applies small but useful desktop improvements.
+
+This script:
+
+- Enables selected GNOME extensions:
+  - Dash to Dock
+  - AppIndicator / KStatusNotifierItem Support
+- Sets sensible default applications (PDF, audio, video, mail, browser)
+
+No deep shell customization is enforced.  
+Users can adjust settings later if desired.
+
+---
+
 ## Additional configuration
 
-Grants Google Chrome Flatpak permission to create:
+The application setup script grants the Google Chrome Flatpak permission to create:
 
 - desktop launchers
 - application icons
 
-This allows installing Progressive Web Apps (PWAs) properly.
+This is required for installing **Progressive Web Apps (PWAs)** properly.
+
+---
+
+## Scope and limitations
+
+These scripts intentionally:
+
+- do **not** modify kernels or drivers
+- do **not** replace system components
+- do **not** enforce heavy GNOME customization
+- do **not** attempt full system automation
+
+They are meant for **private desktop systems** and **everyday use**, not for enterprise management.
+
+---
+
+## License
+
+MIT License
