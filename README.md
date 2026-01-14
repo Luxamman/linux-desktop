@@ -22,16 +22,14 @@ The following scripts are designed to be used **after installing Debian 13 GNOME
 - **A finished system for non-technical users**
 
 The scripts are meant to be executed by someone familiar with Linux basics.  
-The resulting system, however, is designed for everyday users who should not need to touch the terminal at all.
+The resulting system, however, is designed for everyday users who should not need to touch the terminal at all. Like for your parents or grandparents system. 
 
 ---
 
 ### Goal
 
-Fast installation for pros, usable system for users. Like for your parents or grandparents system. 
-
 - Fast and repeatable setup
-- Migrate users from Windows to Linux with minimal friction
+- Migrate users from Windows to Linux with minimal friction and effort
 - Use old or older hardware for loger
 - Up-to-date desktop applications via Flatpak
 - Minimal changes to the base system
