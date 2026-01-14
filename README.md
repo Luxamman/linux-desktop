@@ -12,11 +12,27 @@ It is a pragmatic, Flatpak-first approach for private desktop computers.
 
 ## Debian desktop scripts
 
-The following scripts are designed to be used **after installing Debian 13** as a stable base system (GNOME desktop).
+The following scripts are designed to be used **after installing Debian 13 GNOME** as a stable base system (GNOME desktop).
+
+---
+
+## Philosophy
+
+- **Scripts for experienced users**
+- **A finished system for non-technical users**
+
+The scripts are meant to be executed by someone familiar with Linux basics.  
+The resulting system, however, is designed for everyday users who should not need to touch the terminal at all.
+
+---
 
 ### Goal
 
+Fast installation for pros, usable system for users. Like for your parents or grandparents system. 
+
 - Fast and repeatable setup
+- Migrate users from Windows to Linux with minimal friction
+- Use old or older hardware for loger
 - Up-to-date desktop applications via Flatpak
 - Minimal changes to the base system
 - Reduced maintenance effort
@@ -30,13 +46,30 @@ In short:
 ## Recommended workflow
 
 1. **Backup your data**
-2. Download **Debian 13 Live**
+2. Download **Debian 13 Live GNOME** https://www.debian.org/distrib/ 
 3. Test the system and install Debian
 4. Run the Flatpak setup script
 5. Reboot
 6. Run the application setup script
 7. Apply desktop extras and settings
 
+---
+## Running the scripts
+
+The scripts can be marked as executable, but the do not need to be. 
+
+To make it executable:
+
+- Rightclick on file
+- Options
+- Run as program
+
+Or: run them explicitly using `bash` aka. Terminal:
+
+```bash
+bash install-flatpak.sh
+bash debian-apps-setup.sh
+bash debian-extras-and-settings.sh
 ---
 
 ## Scripts overview
