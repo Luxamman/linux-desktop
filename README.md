@@ -66,10 +66,10 @@ To make it executable:
 
 Or: run them explicitly using `bash` aka. Terminal:
 
-```bash
 bash install-flatpak.sh
 bash debian-apps-setup.sh
 bash debian-extras-and-settings.sh
+
 ---
 
 ## Scripts overview
