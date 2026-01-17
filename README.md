@@ -121,10 +121,11 @@ These are replaced with Flatpak-based alternatives to avoid duplicate applicatio
 - Simple Scan (scanner utility)
 - Déjà Dup (backup tool)
 - Tuner (audio settings utility)
+- Rust Desk (remote desktop tool)
 
 ---
 
-### 3. `debian-extras-and-settings.sh`
+### 3. `debian-extras-and-settings.sh` (Not working yet...)
 
 Applies small but useful desktop improvements.
 
