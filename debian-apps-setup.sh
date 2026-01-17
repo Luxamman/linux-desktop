@@ -72,6 +72,7 @@ flatpak install -y flathub io.github.fastrizwaan.WineCharm  || msg warn_install 
 flatpak install -y flathub org.gnome.SimpleScan             || msg warn_install org.gnome.SimpleScan
 flatpak install -y flathub org.gnome.DejaDup                || msg warn_install org.gnome.DejaDup
 flatpak install -y flathub org.altlinux.Tuner               || msg warn_install org.altlinux.Tuner
+flatpak install -y flathub com.rustdesk.RustDesk            || msg warn_install com.rustdesk.RustDesk
 
 echo
 
