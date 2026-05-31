@@ -61,7 +61,7 @@ flatpak install -y flathub com.mattjakeman.ExtensionManager || msg warn_install 
 flatpak install -y flathub org.gnome.Showtime               || msg warn_install org.gnome.Showtime
 flatpak install -y flathub org.gnome.Papers                 || msg warn_install org.gnome.Papers
 flatpak install -y flathub org.videolan.VLC                 || msg warn_install org.videolan.VLC
-flatpak install -y flathub org.mozilla.Thunderbird          || msg warn_install org.mozilla.Thunderbird
+flatpak install -y flathub org.mozilla.thunderbird_esr      || msg warn_install org.mozilla.Thunderbird
 flatpak install -y flathub com.google.Chrome                || msg warn_install com.google.Chrome
 flatpak install -y flathub de.haeckerfelix.Shortwave        || msg warn_install de.haeckerfelix.Shortwave
 flatpak install -y flathub com.github.neithern.g4music      || msg warn_install com.github.neithern.g4music
